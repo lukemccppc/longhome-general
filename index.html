@@ -47,6 +47,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing: 0.01em;
   }
   .announce-bar span { color: var(--yellow); }
+  .announce-mobile { display: none; }
+  .announce-desktop { display: inline; }
 
   /* ── HEADER ── */
   .site-header {
@@ -558,8 +560,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .stats-bar { padding: 0 16px; }
     .stat-divider { display: none; }
-    .stats-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; justify-content: unset; flex-wrap: unset; }
+    .announce-mobile { display: inline; }
+    .announce-desktop { display: none; }
+    .stats-inner { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 0; justify-content: unset; flex-wrap: unset; }
     .stat-item { padding: 28px 16px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .stat-item:nth-last-child(-n+2) { border-bottom: none; }
     .stat-left { border-right: 1px solid rgba(255,255,255,0.12); }
     .stat-icon { display: flex; justify-content: center; }
     .stat-num { font-size: 28px; }
@@ -608,7 +613,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ANNOUNCEMENT BAR -->
 <div class="announce-bar">
-  <span>Long Home Summer Savings Event</span> — Free Estimates on Roofing, Bathrooms &amp; Siding
+  <span class="announce-desktop"><span>Long Home Summer Savings Event</span> — Free Estimates on Roofing, Bathrooms &amp; Siding</span>
+  <span class="announce-mobile">Shop the <span>Long Home Summer Savings Event</span></span>
 </div>
 
 <!-- HEADER -->
