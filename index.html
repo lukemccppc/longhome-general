@@ -153,6 +153,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight: 700;
     margin-bottom: 24px;
   }
+  .hero-sub-mobile { display: none; }
+  .form-h3-mobile { display: none; }
   .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; }
   .badge {
     display: flex;
@@ -546,8 +548,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hero-inner { grid-template-columns: 1fr; padding: 36px 16px 20px; gap: 16px; }
     .hero-tag { display: none; }
     .hero h1 { font-size: 43px; text-align: center; }
-    .hero-sub { font-size: 16.5px; text-align: center; }
+    .hero-sub { display: none; }
+    .hero-sub-mobile { display: block; font-size: 16.5px; text-align: center; color: rgba(255,255,255,0.82); line-height: 1.65; margin-bottom: 20px; }
     .hero-content { text-align: center; }
+    .form-card-body h3 { display: none; }
+    .form-h3-mobile { display: block; font-size: 26px; font-weight: 800; color: var(--dark); margin-bottom: 6px; line-height: 1.2; text-align: center; }
     .hero-price-note { display: table; margin-left: auto; margin-right: auto; }
     .hero-badges { display: none; }
 
@@ -556,7 +561,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .stats-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; justify-content: unset; flex-wrap: unset; }
     .stat-item { padding: 28px 16px; border-bottom: 1px solid rgba(255,255,255,0.12); }
     .stat-left { border-right: 1px solid rgba(255,255,255,0.12); }
-    .stat-full { grid-column: 1 / -1; border-right: none; }
     .stat-icon { display: flex; justify-content: center; }
     .stat-num { font-size: 28px; }
 
@@ -627,6 +631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <h1>The Most Trusted Name in <span class="accent">Home Improvement</span></h1>
       <p class="hero-sub">With over 8 decades of excellence, Long Home delivers expert roofing, bathroom remodeling, and siding — backed by industry-leading warranties and financing options to fit any budget.</p>
+      <p class="hero-sub-mobile">For nearly eight decades, we have helped hundreds of thousands of families create homes that are safer, more comfortable, and more beautiful.</p>
       <div class="hero-badges">
         <div class="badge">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -647,6 +652,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="form-card" id="quote-form">
       <div class="form-card-body">
         <h3>Get Your Free<br>Estimate Today</h3>
+        <h3 class="form-h3-mobile">Get a FREE Estimate</h3>
         <p class="form-sub">No obligation. No pressure. Just expert advice.</p>
         <form onsubmit="return false;">
           <div class="form-row">
@@ -725,7 +731,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="stat-label">Accredited Business</div>
     </div>
     <div class="stat-divider"></div>
-    <div class="stat-item stat-full">
+    <div class="stat-item stat-left">
       <div class="stat-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
       <div class="stat-num">4.9/5</div>
       <div class="stat-label">Star Customer Rating</div>
